@@ -25,10 +25,10 @@ class Show < ActiveRecord::Base
   end
   
   def self.shows_by_alphabetical_order
-    shows = []
-    Show.order(:name).each do |s|
-      shows << s
-    end
-    shows
+    #shows = []
+    Show.order(:name)#.each do |s|
+      #shows << s
+    #end
+    #shows
   end
 end
